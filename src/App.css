@@ -1,0 +1,164 @@
+html,
+body {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  background-image: linear-gradient(to bottom right, rgb(255, 94, 94), rgb(180, 101, 255) 40%, rgba(255, 153, 57, 0.781));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  padding-top: 20%;
+  user-select: none; /*? hace que el usuario no pueda seleccionar el contenido */
+}
+
+.react-calculator {
+  border-top: solid 5px #a90033;
+  border-left: solid 8px #a90033;
+  border-right: solid 2px rgb(255, 140, 0);
+  border-bottom: solid 3px rgb(255, 140, 0);
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #292f36;
+  box-shadow: 0 190px 380px rgb(122, 106, 106),
+    0 150px 120px rgba(19, 19, 19, 0.992);
+}
+
+.react-calculator {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #292f36;
+  box-shadow: 0 19px 38px rgba(19, 19, 19, 0.665),
+    0 1px 100px rgba(0, 0, 0, 0.293);
+}
+
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: 10px;
+  padding: 16px;
+  font-size: 22px;
+  line-height: 1;
+  background-color: transparent;
+  color: #ff155b;
+  transition: all 400ms;
+  border: 1px solid rgba(255, 0, 0, 0.067);
+}
+
+button:hover {
+  color: #00edf5;
+  border: 0.1px solid rgba(255, 182, 193, 0.648);
+}
+
+.result {
+  user-select: text;
+  position: relative;
+  width: 320px;
+  height: 80px;
+  padding: 15px;
+  overflow: hidden;
+  background-color: rgba(19, 19, 19, .64);
+  font-size: 30px;
+  line-height: 2;
+  color: rgb(176, 80, 224);
+  text-align: right;
+  transition: all 350ms;
+  direction: rtl;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.result:hover {
+  color: #ff155b;
+}
+
+
+.operacion {
+  user-select: none;
+  position: relative;
+  width: 320px;
+  height: 25px;
+  padding: auto;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: rgba(19, 19, 19, 0.271);
+  font-size: 15px;
+  line-height: 2;
+  color: rgb(80, 135, 224);
+  text-align: left;
+  transition: all 350ms;
+  direction: rtl;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.operacion:hover {
+  color: #ff155b;
+}
+
+
+.functions button,
+.math-operations button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  color: rgb(243, 180, 64);
+}
+
+.functions button:hover,
+.math-operations button:hover {
+  color: rgb(0, 255, 0);
+}
+
+.functions button:active,
+.math-operations button:active {
+  color: rgb(255, 138, 251);
+  font-size: 10px;
+}
+
+.numbers {
+  width: 240px;
+  float: left;
+}
+
+.numbers button {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.numbers button:active {
+  color: rgb(255, 116, 255);
+  font-size: 10px;
+}
+
+.numbers button:last-child {
+  width: 100%;
+}
+
+.functions {
+  float: left;
+  width: 240px;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 20px;
+}

@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "react-calc-app-34ccc",
+    "react-calculator": "react-calc-app-34ccc"
+  },
+  "targets": {}
+}
